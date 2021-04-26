@@ -1,0 +1,43 @@
+;body {
+    background-color: #EEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#index-main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #643219;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size:32px;
+    padding-left: 95px;
+}
+
+main {
+    padding:0 15px;
+}
+
+main h2 {
+    border-bottom: 1px solid black;
+}
+
+.profile {
+    float: right;
+    box-shadow: 0 0 17px black;
+    width: 150px;
+}
+
+footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
+    color: white;
+}
+
+footer a:hover {
+    color: #DDD;
+}
