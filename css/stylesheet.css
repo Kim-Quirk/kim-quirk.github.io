@@ -41,3 +41,19 @@ footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, foot
 footer a:hover {
     color: #DDD;
 }
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+footer p.legal {
+    margin-bottom: 9px;
+    font-size: .9em;
+}
+
+footer p.highlight {
+    color: yellow;
+    font-size: .8em;
+    margin-top: 0;
+}
