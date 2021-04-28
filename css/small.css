@@ -12,12 +12,18 @@ header, footer {
     background-color: #643219;
     color: white;
     padding: 8px;
-    border-radius: 15px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 header h1 {
-    font-size:32px;
-    padding-left: 95px;
+    text-align: center;
 }
 
 main {
@@ -29,9 +35,10 @@ main h2 {
 }
 
 .profile {
-    float: right;
-    box-shadow: 0 0 17px black;
-    width: 150px;
+    width: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer a, footer a:link, footer a:visited, footer a:hover, footer a:active, footer a:focus {
