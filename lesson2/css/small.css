@@ -1,0 +1,40 @@
+header,
+footer {
+    background-color: #1d2b52;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
+
+body {
+    
+    font-family: 'Oswald', sans-serif;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: grid;
+    padding: 1em;
+}
+
+section {
+    background-color: whitesmoke;
+    margin-left: .5em;
+    margin-right: .5em;
+    border-radius: 5%;
+    border: 1px solid #d7d8db;
+    /* padding: 2px; */
+}
+
+h2 {
+    color: white;
+    margin: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #354470;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
