@@ -1,6 +1,6 @@
 header,
 footer {
-    background-color: #1d2b52;
+    background-color: #131a26;
     color: white;
     text-align: center;
     margin: 0;
@@ -13,6 +13,7 @@ body {
 }
 p {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }
 
 main {
@@ -22,19 +23,39 @@ main {
 
 section {
     background-color: whitesmoke;
-    margin-left: .5em;
-    margin-right: .5em;
     border-radius: 5%;
     border: 1px solid #d7d8db;
-    /* padding: 2px; */
 }
 
-h2 {
+ h2 {
     color: white;
-    margin: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    background-color: #354470;
+    font-size: 1.2em;
+}
+
+#blue {
+    background-color: #39495c;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0px;
+}
+
+#white {
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    margin: 0px;
+}
+
+img {
+    width: 18em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
