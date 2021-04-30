@@ -14,6 +14,7 @@ body {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
+    padding: 0px;
 }
 
 main {
@@ -23,7 +24,7 @@ main {
 
 section {
     background-color: whitesmoke;
-    border-radius: 5%;
+    border-radius: 10px;
     border: 1px solid #d7d8db;
 }
 
@@ -34,8 +35,8 @@ section {
 
 #blue {
     background-color: #39495c;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     padding-left: .5em;
     padding-right: .5em;
     padding-top: 2px;
@@ -44,15 +45,15 @@ section {
 }
 
 #white {
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: .8em;
+    padding-right: .8em;
     padding-top: .2em;
     padding-bottom: .2em;
     margin: 0px;
 }
 
 img {
-    width: 18em;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;

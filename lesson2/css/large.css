@@ -6,13 +6,9 @@
     main section:nth-child(3) {
         grid-column: span 1;
     }
-    main {
-        display: grid;
-        padding: 2em;
-    }
-    
-    section {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+
+    body {
+        max-width: 62em;
+        margin: auto;
     }
 }
