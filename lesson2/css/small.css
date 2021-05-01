@@ -33,7 +33,7 @@ section {
     font-size: 1.2em;
 }
 
-#blue {
+#blue1, #blue2, #blue3 {
     background-color: #39495c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -44,7 +44,7 @@ section {
     margin: 0px;
 }
 
-#white {
+#white1, #white2, #white3 {
     padding-left: .8em;
     padding-right: .8em;
     padding-top: .2em;
