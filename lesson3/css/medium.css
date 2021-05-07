@@ -1,10 +1,10 @@
-@media only screen and (min-width: 34.5em) {
+@media only screen and (min-width: 30.5em) {
     nav {
         max-width: 100%;
     }
 
     #navigation {
-        grid-template-columns: repeat(7, auto);
+        grid-template-columns: repeat(4, auto);
     }
 
     #navigation li:first-child {
@@ -17,6 +17,49 @@
 
     #navigation a {
         text-align: center;
+        display: block;
+        padding-top: .8em;
+        padding-bottom: .8em;
+        text-decoration: none;
+        color: #003034;
+        font-weight: 700;
     }
-    
+
+    main {
+        max-width: 600px;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    p,
+    ul,
+    ol {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: .8em;
+    }
+
+
 }

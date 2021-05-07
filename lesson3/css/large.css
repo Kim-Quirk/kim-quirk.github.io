@@ -2,5 +2,54 @@
     #navigation {
         width: 800px;
         margin: 0px auto;
+        font-size: 1.3em;
+    }
+
+    main {
+        max-width: 700px;
+    }
+
+    /* Typography and color */
+
+    .button {
+        background-color: #4D2B83;
+        border: none;
+        color: #FFF8F2;
+        padding: 8px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    a:link {
+        color: #4D2B83;
+    }
+
+
+    a:visited {
+        color: #6BB3A2;
+    }
+
+    a:hover {
+        color: #957CB4;
+    }
+
+
+    body {
+        background-color: #FFF8F2;
+    }
+
+    .important {
+        background-color: #DCCDE4;
+        padding: .2em;
+    }
+
+    footer p {
+        font-size: 1em;
     }
 }
