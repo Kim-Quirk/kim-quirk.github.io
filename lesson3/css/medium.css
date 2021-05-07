@@ -1,0 +1,22 @@
+@media only screen and (min-width: 34.5em) {
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(7, auto);
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    #navigation li {
+        display: block;
+    }
+
+    #navigation a {
+        text-align: center;
+    }
+    
+}

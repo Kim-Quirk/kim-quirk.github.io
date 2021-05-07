@@ -1,0 +1,49 @@
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #83C5BE;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #003034;
+    font-weight: 700;
+}
+
+#navigation a:hover, #navigation a.active:hover {
+    color: #EDF6F9;
+    background-color: #003034;
+}
+
+#navigation a.active {
+    background-color: #003034;
+    color: #EDF6F9;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
