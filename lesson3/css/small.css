@@ -84,6 +84,9 @@ img {
     cursor: pointer;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 

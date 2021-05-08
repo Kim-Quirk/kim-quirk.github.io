@@ -2,7 +2,7 @@
     #navigation {
         width: 800px;
         margin: 0px auto;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     main {
@@ -50,6 +50,36 @@
     }
 
     footer p {
+        font-size: 1.2em;
+    }
+
+    p,
+    ul,
+    ol {
+        font-size: 1.4em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h5 {
         font-size: 1em;
+    }
+
+    h6 {
+        font-size: .8em;
     }
 }

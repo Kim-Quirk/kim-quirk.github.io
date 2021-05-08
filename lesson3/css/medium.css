@@ -5,6 +5,7 @@
 
     #navigation {
         grid-template-columns: repeat(4, auto);
+        font-size: 1.2em;
     }
 
     #navigation li:first-child {
