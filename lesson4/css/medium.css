@@ -59,6 +59,10 @@
         font-size: .8em;
     }
 
+    footer img {
+        max-width: 25em;
+    }
+
     p,
     ul,
     ol,

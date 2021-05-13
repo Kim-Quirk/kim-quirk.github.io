@@ -61,7 +61,8 @@ header {
     grid-template-columns: minmax(2em, 5em) 1fr;
 }
 
-header h1, header p {
+header h1,
+header p {
     margin-block-end: 0px;
     margin-block-start: 0px;
     grid-column: 2/3;
@@ -232,12 +233,41 @@ h6 {
     color: #003034;
 }
 
-footer p {
+footer {
     background-color: #83C5BE;
-    color: #003034;
-    text-align: center;
-    margin: 0;
     padding: 1em;
+}
+
+footer p {
+    color: #003034;
+    margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: .8em;
+    font-size: .7em;
+}
+
+footer img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer h5 {
+    color: #003034;
+    margin-block-start: .3em;
+    margin-block-end: .3em;
+    margin-bottom: 1em;
+}
+
+#contactInfo {
+    margin-bottom: 1em;
+}
+
+#bar {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.media {
+    display: none;
 }
