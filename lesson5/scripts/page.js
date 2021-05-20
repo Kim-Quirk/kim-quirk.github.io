@@ -11,7 +11,6 @@ window.addEventListener('load', () => {
 
 window.addEventListener('load', (event) => {
     const week = document.querySelector('#weekday');
-    // lu.textContent = new Date().toDateString();
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -22,6 +21,15 @@ window.addEventListener('load', (event) => {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
     week.textContent = weekday[d.getDay()];
+
+    const pancake = document.getElementById('pancakes');
+    if (d.getDay() == 5) { //5 is Friday
+        
+        pancake.style.display = "block";
+    }
+    else {
+        pancake.style.display = "none";
+    }
 
     const dayNum = document.getElementById('day');
     dayNum.textContent = d.getDate();
