@@ -30,7 +30,7 @@
 
     #navigation {
         grid-template-columns: repeat(6, auto);
-        font-size: 1em;
+        font-size: .9em;
         max-width: 800px;
         margin: 0 auto;
     }

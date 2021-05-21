@@ -37,7 +37,7 @@ nav {
 }
 
 #navigation a.active {
-    background-color: #003034;
+    background-color: rgba(0, 48, 52, .7);
     color: #EDF6F9;
 }
 
@@ -53,14 +53,14 @@ nav {
     box-sizing: border-box;
     padding: 0;
     padding-bottom: 1em;
+    overflow: hidden;
 }
 
 #pancakes img {
     opacity: .5;
     margin: 0;
     min-width: 60em;
-    overflow: hidden;
-    width: 100%;
+    width: 100vw;
 }
 
 #pancakes p {
