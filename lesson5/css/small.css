@@ -277,21 +277,21 @@ h6 {
     color: #003034;
 }
 
-#footer-wrapper{
+#footer-wrapper {
     max-width: 400px;
     margin: 0 auto;
+    padding-bottom: 1em;
 }
 
 footer {
     background-color: #83C5BE;
-    padding: 1em;
 }
 
 footer p {
     color: #003034;
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: .7em;
+    font-size: .8em;
 }
 
 footer img {
@@ -300,22 +300,42 @@ footer img {
     max-width: 100%;
 }
 
+#map {
+    display: none;
+}
+
 footer h5 {
     color: #003034;
-    margin: .3em;
-    margin: .3em;
     margin-bottom: 1em;
 }
 
 #contactInfo {
+    margin: 0 auto;
     margin-bottom: 1em;
+    max-width: 12em;
+    text-align: center;
+    padding-top: .2em;
+}
+
+#contactInfo p {
+    font-size: .8em;
 }
 
 #bar {
-    margin-top: 1em;
+    max-width: 400px;
+    margin: 0 auto;
     text-align: center;
 }
 
+#bar-wrapper {
+    background-color: #6BB3A2;
+    padding: 1em;
+    margin: 0;
+}
+
 .media {
-    display: none;
+    width: 25px;
+    display: inline-block;
+    padding-right: .5em;
+    padding-top: .5em;
 }

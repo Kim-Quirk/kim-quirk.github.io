@@ -121,18 +121,21 @@
         grid-template-columns: repeat(2, auto);
         max-width: 900px;
         margin: 0 auto;
+        padding-left: 3em;
+        padding-right: 3em;
     }
 
     #contactInfo {
         grid-column: 2/3;
+        max-width: none;
+        text-align: left;
     }
 
-
     .media {
-        width: 50px;
-        display: inline-block;
-        padding-right: 1em;
-        padding-top: 1em;
+        width: 45px;
+    }
+    #map {
+        padding: .5em;
     }
 
     footer img {
@@ -142,6 +145,10 @@
     }
 
     #bar {
+        max-width: 900px;
+    }
+
+    #bar-wrapper {
         grid-column: 1/3;
     }
 }
