@@ -1,0 +1,100 @@
+body {
+    display: grid;
+    width: 750px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+#arrow-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 2;
+    justify-self: left;
+    padding: 30px;
+}
+
+#arrow-right {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    z-index: 2;
+    justify-self: right;
+    padding: 30px;
+}
+
+div {
+    background: linear-gradient(0deg, rgba(5,113,188,1) 15%, rgba(121,131,112,0.43748837425595233) 47%, rgba(249,249,249,0.05933711375175066) 67%), url(app-card.jpg);
+    grid-column: 1/5;
+    grid-row: 1/8;
+    z-index: 1;
+    height: 1334px;
+}
+
+.overlay {
+    opacity: .5;
+}
+
+#background {
+    z-index: -1;
+}
+
+h1 {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    z-index: 2;
+    font-size: 6em;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: -40px;
+}
+
+p:first-of-type {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    z-index: 2;
+    padding-top: 0px;
+    margin-bottom: -40px;
+}
+
+p {
+    grid-column: 1/5;
+    grid-row: 6/7;
+    z-index: 2;
+    font-size: 2em;
+    padding: 40px;
+}
+
+#pic-1 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    z-index: 2;
+    justify-self: center;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+#pic-2 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    z-index: 2;
+    justify-self: center;
+    padding-bottom: 30px;
+}
+
+#pic-3 {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    z-index: 2;
+    justify-self: center;
+    padding-bottom: 30px;
+}
+
+#pic-4 {
+    grid-column: 4/5;
+    grid-row: 7/8;
+    z-index: 2;
+    justify-self: center;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
