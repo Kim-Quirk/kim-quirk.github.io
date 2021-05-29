@@ -48,6 +48,13 @@ window.addEventListener('load', (event) => {
     var windchill = 0;
     var temp = document.getElementById("temp").innerHTML;
     var wind = document.getElementById("wind").innerHTML;
-    windchill = Math.round(35.74 + 0.621*temp - 35.75*wind**0.16 + 0.4275*temp*wind**0.16);
+    if ( temp <= 50 && wind > 3)
+    {
+        windchill = Math.round(35.74 + 0.621*temp - 35.75*wind**0.16 + 0.4275*temp*wind**0.16);
+        windchill = windchill + "°F";
+    }
+    else {
+        windchill = "N/A"
+    }
     chillP.innerHTML = windchill;
 })
