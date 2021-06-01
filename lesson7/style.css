@@ -24,11 +24,11 @@ h1 {
     font-weight: bolder;
 }
 
-article img[data-src] {
+main img[data-src] {
     filter: blur(0.2em);
-  }
-  
-  article img {
+}
+
+main img {
     filter: blur(0em);
-    transition: filter 0.5s;
-  }
+    transition: filter 0.7s;
+}
