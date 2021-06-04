@@ -123,6 +123,9 @@ main {
     padding-bottom: .5em;
     align-content: center;
 }
+.gallery h1 {
+    text-align: center;
+}
 
 .gallery-grid {
     display: grid;
@@ -135,14 +138,17 @@ main {
 
 .box {
     max-width: 500px;
-    margin: 0 auto;
-    margin: 10px;
+    margin: 0px 10px 40px;
     background-color: #83C5BE;
     border-radius: 5px;
+    height: inherit;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
 .box p {
-    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: italic;
 }
 
 img.gallery {

@@ -34,10 +34,19 @@
 
     main.gallery {
         max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .box:hover img.gallery{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    img.gallery {
+        /* border: 5px solid red; */
+        width: 459px;
+        min-height: 250px;
+        background-color: lightgray;
+    }
+
+    .box:hover {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
     }
 
     .gallery-grid {

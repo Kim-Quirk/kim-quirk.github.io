@@ -59,6 +59,12 @@
         padding-right: 3em;
     }
 
+    main.gallery {
+        max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .gallery-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
