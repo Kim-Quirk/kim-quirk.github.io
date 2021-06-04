@@ -65,6 +65,12 @@
         padding-right: 10px;
     }
 
+    img.gallery {
+        min-height: 175px;
+        min-width: 240px;
+    }
+
+
     .gallery-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

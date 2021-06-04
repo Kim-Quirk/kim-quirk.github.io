@@ -39,7 +39,12 @@
     }
 
     img.gallery {
-        background-color: lightgray;
+        min-height: 155px;
+        min-width: 200px;
+    }
+
+    .box {
+        min-height: 210px;
     }
 
     .box:hover {

@@ -136,6 +136,12 @@ main {
     padding-bottom: 2em;
 }
 
+img.gallery {
+    background-color: lightgray;
+    min-height: 155px;
+    min-width: 200px;
+}
+
 .box {
     max-width: 500px;
     margin: 0px 10px 40px;
