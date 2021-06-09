@@ -25,6 +25,11 @@ tr:nth-child(odd) {
      background-color: #e7ffed;
  }
 
+ tr:nth-child(5) td:nth-child(3){
+     background-color: #628ca6;
+     color: white;
+ }
+
 tbody th {
      background-color:  #628ca6;
      color: white;
