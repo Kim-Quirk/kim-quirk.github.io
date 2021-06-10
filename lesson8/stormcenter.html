@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A weather forecasting site made for dogs and dog owners.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Google fonts go here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="scripts/page.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Days Weather | Storm Center</title>
+</head>
+
+<body>
+    <header>
+        <div id="pancakes">
+            <img src="images/pancake-banner2.jpg" alt="pancake banner2">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.
+                <br>
+                Saturday at the city park pavilion.</p>
+        </div>
+        <div class="wrapper">
+            <img id="logo" src="images/dog.png" alt="Logo">
+            <h1> Dog Days Weather</h1>
+            <p>The weather site for dog owners!</p>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="../lesson7/preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <div class="form-box">
+                <label>
+                    Full Name
+                    <input type="text" name="fullname" minlength="5" placeholder="Full Name" required>
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="example@mail.com">
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone" required placeholder="(888) 888-8888">
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Zip Code
+                    <input type="number" name="zip" placeholder="Zip Code" required>
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Storm Date
+                    <input type="date" name="date">
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Storm Type
+                    <input list="type" name="type">
+                </label>
+                <datalist id="type">
+                    <option value="Flash flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                    <option value="Rain">
+                </datalist>
+            </div>
+            <div class="form-box">
+                <label for="rating">
+                    Storm Severity
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="rating">
+                        Selected Severity: <span id="ratingvalue">5</span>
+                </label>
+            </div>
+            <div class="form-box">
+                <label for="region">
+                    Where is the storm located?
+                    <select id="region">
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda-springs">Soda Springs</option>
+                        <option value="fish-haven">Fish Haven</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-box">
+                <label>Are you in-danger?</label>
+                <div>
+                    <label for="no">
+                        <input type="radio" id="no" name="in-danger" value="no"> No
+                    </label>
+                    <br>
+                    <label for="maybe">
+                        <input type="radio" id="maybe" name="in-danger" value="maybe"> Maybe
+                    </label>
+                    <br>
+                    <label for="yes">
+                        <input type="radio" id="yes" name="in-danger" value="yes"> Yes
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <div class="form-box">
+                <label>Additional Information or Comments
+                    <br>
+                    <textarea rows="4">Type your answer here</textarea>
+                </label>
+            </div>
+            <div class="form-box">
+                <button id="Submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="footer-wrapper">
+            <div id="contactInfo">
+                <h5>Contact Information</h5>
+                <p>(888) 888-8888</p>
+                <p>placeholder@place.null</p>
+                <img alt="Instagram" class="media" src="images/instagram.png">
+                <img alt="Facebook" class="media" src="images/facebook.png">
+                <img alt="Twitter" class="media" src="images/twitter.png">
+            </div>
+            <img id="map" src="images/placeholder-map.jpg" alt="Map">
+        </div>
+        <div id="bar-wrapper">
+            <div id="bar">
+                <p class="legal">&copy; <span id="copyrightyear"></span> | Kimberly Black | Idaho |
+                    <span id="weekday"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans JP',
+                    'Roboto Condensed: 300'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
