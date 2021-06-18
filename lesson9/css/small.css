@@ -437,6 +437,19 @@ div.town-wrapper {
     margin-top: 2em;
 }
 
+.towns p:first-of-type {
+    margin-top: 1.2em;
+}
+
+.towns p {
+    margin-bottom: .2em;
+    margin-top: .2em;
+}
+
+.towns h3 {
+    line-height: 1em;
+}
+
 div.towns {
     background-color: #DCCDE4;
     padding-left: 1em;
