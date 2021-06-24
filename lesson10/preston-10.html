@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A weather forecasting site made for dogs and dog owners.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Google fonts go here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="scripts/page.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Days Weather | Preston</title>
+</head>
+
+<body>
+    <header>
+        <div id="pancakes">
+            <img src="images/pancake-banner2.jpg" alt="pancake banner2">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.
+                <br>
+                Saturday at the city park pavilion.</p>
+        </div>
+        <div class="wrapper">
+            <img id="logo" src="images/dog.png" alt="Logo">
+            <h1> Dog Days Weather</h1>
+            <p>The weather site for dog owners!</p>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="grid-wrapper">
+            <div class="contentbox">
+                <!-- <img src="images/banner.jpeg" alt="Hero" sizes="80vw" srcset="images/banner500.jpg 500w,
+            images/banner800.jpg 800w,
+            images/banner1100.jpg 1100w,
+            "> -->
+            <img id="hero-image" src="images/banner-town2.jpeg" alt="hero image">
+            </div>
+            <!-- <img id="hero-image" src="images/banner-town2.jpeg" alt="hero image"></div> -->
+            <div class="contentbox">
+                <h5>Weather Summary</h5>
+                <p>Condition: <span id="condition">Error</span></p>
+                <p>Currently: <span id="temp">Error</span>°F</p>
+                <p>High: <span id="highTemp">Error</span>°F</p>
+                <p>Humidity: <span id="humid">Error</span>%</p>
+                <p>Wind: <span id="wind">Error</span>mph</p>
+                <p>Wind Chill: <span id="chill"></span></p>
+            </div>
+            <div class="contentbox">
+                <h5>5 Day Forecast</h5>
+                <table>
+                    <tr>
+                        <th id="day0">Error</th>
+                        <th id="day1">Error</th>
+                        <th id="day2">Error</th>
+                        <th id="day3">Error</th>
+                        <th id="day4">Error</th>
+                    </tr>
+                    <tr>
+                        <td><img alt="forecast picture" class="forecast" id="img0" src="images/windy.png"><span id="temp0">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img1" src="images/rain.png"><span id="temp1">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img2" src="images/cloudy.png"><span id="temp2">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img3" src="images/sun.png"><span id="temp3">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img4" src="images/sun.png"><span id="temp4">Error</span>°F</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contentbox">
+                <h5>Hike to Bloomington Lake</h5>
+                <p>by <a href="https://www.theoutbound.com/hunter-iverson">Hunter Iverson</a></p>
+                <img src="images/lake.jpeg" alt="Picture of a Picnic">
+                <p>Bloomington Lake is an awesome place for an afternoon adventure. It's a beautiful lake tucked into a
+                    mountain and a very easy hike. Once there, you can swim, hit the rope swing, have a picnic, or
+                    hammock if you want.</p>
+                <p>Bloomington Lake is deep in the mountains West of a small town called Bloomington. The road from the
+                    town to Bloomington Lake is a narrow dirt road. It takes about 35 minutes to take this road and most
+                    cars should be able to handle it. There's plenty of parking at the trailhead and some bathrooms as
+                    well. You can also get to the lake from the West side of the mountains. Just take Cub River Road
+                    north of Franklin, Idaho until you get to Willow Flat Campground. The trailhead is just South of the
+                    campground. However the trail is quite a bit longer from this side, I'd say about 3 miles to the
+                    lake.</p>
+                <p>The trail itself is about a 1/2 mile to the lake and back. It's very short and easy and almost
+                    everyone should be able to handle it. I've even seen people carry kayaks and paddleboards up to the
+                    lake. Once you get to the lake there are trails that go along both sides. On the East side of the
+                    lake, you can find a rope swing from a large tree and on the South side there are some cliffs you
+                    can cliff jump from. There are also some great places to hang a hammock and take in the view. I
+                    believe you can camp near the lake and if not, there are plenty of areas to camp on the way to the
+                    lake.</p>
+                <p><a href="https://www.theoutbound.com/idaho/hiking/hike-to-bloomington-lake">Click here to read the
+                        full article.</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-wrapper">
+            <div id="contactInfo">
+                <h5>Contact Information</h5>
+                <p>(888) 888-8888</p>
+                <p>placeholder@place.null</p>
+                <img alt="Instagram" class="media" src="images/instagram.png">
+                <img alt="Facebook" class="media" src="images/facebook.png">
+                <img alt="Twitter" class="media" src="images/twitter.png">
+            </div>
+            <img id="map" src="images/placeholder-map.jpg" alt="Map">
+        </div>
+        <div id="bar-wrapper">
+            <div id="bar">
+                <p class="legal">&copy; <span id="copyrightyear"></span> | Kimberly Black | Idaho |
+                    <span id="weekday"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans JP',
+                    'Roboto Condensed: 300'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
