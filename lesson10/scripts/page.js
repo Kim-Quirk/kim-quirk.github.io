@@ -73,7 +73,7 @@ window.addEventListener('load', (event) => {
 })
 
 async function getDailyWeather() {
-    const url = "https://api.openweathermap.org/data/2.5/weather?zip=83440,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    const url = "https://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
 
     const response = await fetch(url);
 
@@ -85,7 +85,7 @@ async function getDailyWeather() {
 }
 
 async function getForecastWeather() {
-    const url = "https://api.openweathermap.org/data/2.5/forecast?zip=83440,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    const url = "https://api.openweathermap.org/data/2.5/forecast?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
 
     const response = await fetch(url);
 
