@@ -1,0 +1,236 @@
+@media only screen and (min-width: 34.5em) {
+
+    #pancakes p {
+        top: 10%;
+        font-size: 1em;
+    }
+
+    .wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-columns: minmax(2em, 8em) 1fr;
+    }
+
+    header h1 {
+        font-size: 2.4em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #logo {
+        max-width: 75px;
+        margin-right: 0px;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+        font-size: .9em;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    #navigation li {
+        display: block;
+    }
+
+    #navigation a {
+        text-align: center;
+        display: block;
+        padding-top: .8em;
+        padding-bottom: .8em;
+        text-decoration: none;
+        color: #003034;
+        font-weight: 700;
+    }
+
+    main {
+        max-width: 600px;
+        padding-left: 3em;
+        padding-right: 3em;
+        min-height: 22vh;
+    }
+
+    main.gallery {
+        max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    img.gallery {
+        min-height: 175px;
+        min-width: 240px;
+    }
+
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    div.contentbox:nth-child(3) {
+        display: block;
+        background-color: #FFF8F2;
+    }
+
+    div.contentbox:nth-child(3) h5 {
+        text-align: center;
+    }
+
+    table,
+    th,
+    td {
+        /* border: 1px solid #003034; */
+        border: none;
+        border-collapse: collapse;
+        color: #003034;
+        background-color: #83C5BE;
+        /* #83C5BE, #003034, #EDF6F9 */
+    }
+
+    table {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 1.5em;
+    }
+
+    td:first-of-type {
+        border-left: none;
+    }
+
+    td {
+        padding-left: .2em;
+        padding-right: .2em;
+        border-left: 2px solid #003034b0;
+    }
+
+    tr {
+        text-align: center;
+        background-color: #FFF8F2;
+    }
+
+    th {
+        background-color: #003034b0;
+        color: #FFF8F2;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .forecast {
+        width: 75px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.contentbox:nth-child(4) img {
+        float: right;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        width: 35em;
+    }
+
+    div.contentbox:nth-child(4) h5 {
+        font-size: 1.5em;
+    }
+
+    #contactInfo {
+        max-width: none;
+    }
+
+    #contactInfo p {
+        font-size: 1em;
+    }
+
+    .media {
+        width: 40px;
+        padding-right: .5em;
+        padding-top: 1em;
+    }
+
+    footer p {
+        font-size: .8em;
+    }
+
+    footer img {
+        max-width: 25em;
+    }
+
+    #bar {
+        max-width: 600px;
+    }
+
+    #map {
+        display: block;
+    }
+
+    p,
+    ul,
+    ol,
+    .contentbox,
+    form {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: .8em;
+    }
+
+    /*****************************
+           Forms
+    *****************************/
+
+    /*****************************
+           Home Page
+    *****************************/
+    div.towns {
+        display: flex;
+        flex-direction: row;
+        margin: 1em;
+    }
+
+    div.towns:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    div.towns div:nth-child(odd) {
+        padding: .5em;
+        min-width: 13em;
+    }
+
+    div.towns div:nth-child(even) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .5em;
+    }
+
+    .towns img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

@@ -1,0 +1,78 @@
+/* Small Screens by default */
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1em;
+    justify-items: center;
+    column-gap: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section {
+    background-color: #dfdbf3;
+    border: 2px solid #c1bae2;;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+
+img {
+    max-width: 10em;
+    box-shadow: 1px 1px 15px black;
+    margin-bottom: .5em;
+}
+
+h1, h2 {
+    color: #41296e;
+    font-family: 'Bree Serif', serif;
+}
+
+p {
+    font-size: .8em;
+}
+
+main p, main h2 {
+    line-height: .8em;
+}
+
+p, footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: .5em;
+}
+
+header {
+    background-image: linear-gradient(white, white, white, rgb(212, 211, 211));  
+}
+
+main, footer {
+    background-color: rgb(235, 235, 235);
+}
+
+body {
+    margin: 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Medium Screens */
+@media only screen and (min-width: 34.5em) {
+    div.cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 58em) {
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

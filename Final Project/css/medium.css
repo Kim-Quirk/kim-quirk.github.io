@@ -1,0 +1,56 @@
+@media only screen and (min-width: 34.5em) {
+
+    /*  */
+    /* Navigation */
+    /*  */
+    nav {
+        max-width: 100%;
+        margin: 0 auto;
+        border-bottom: 2px solid #f7f9fa;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+        font-size: .9em;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+
+    #navigation li {
+        display: block;
+    }
+
+    #navigation a {
+        text-align: center;
+        display: block;
+        padding-top: .8em;
+        padding-bottom: .8em;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    #navigation a:hover,
+    #navigation a.active:hover {
+        color: #24acf0;
+        background-color: #302b42;
+        border-bottom: 2px solid #24acf0;
+    }
+
+    #navigation a.active {
+        background-color: #302b42;
+        color: #0472d9;
+        border-bottom: 2px solid #0472d9;
+    }
+
+    /*  */
+    /* Body */
+    /*  */
+    main {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+}

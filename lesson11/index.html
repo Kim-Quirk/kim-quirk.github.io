@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A weather forecasting site made for dogs and dog owners.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Google fonts go here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="scripts/page.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Days Weather | Home</title>
+</head>
+
+<body>
+    <header>
+        <div id="pancakes">
+            <img src="images/pancake-banner2.jpg" alt="pancake banner2">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.
+                <br>
+                Saturday at the city park pavilion.</p>
+        </div>
+        <div class="wrapper">
+            <img id="logo" src="images/dog.png" alt="Logo">
+            <h1> Dog Days Weather</h1>
+            <p>The weather site for dog owners!</p>
+        </div>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a class="ham" href="#">&#9776;</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="town-wrapper">
+            <div class="towns">
+                <div>
+                    <h3>Preston</h3>
+                    <h5 id="preston-motto">Motto</h5>
+                    <hr>
+                    <p id="preston-year">Year</p>
+                    <p id="preston-population">Population</p>
+                    <p id="preston-rain">Rain</p>
+                </div>
+                <div>
+                    <img id="preston-image" src="images/preston.jpg" alt="Preston">
+                </div>
+            </div>
+            <div class="towns">
+                <div>
+                    <h3>Soda Springs</h3>
+                    <h5 id="soda-motto">Motto</h5>
+                    <hr>
+                    <p id="soda-year">Year</p>
+                    <p id="soda-population">Population</p>
+                    <p id="soda-rain">Rain</p>
+                </div>
+                <div>
+                    <img id="soda-image" src="images/soda.jpg" alt="Soda Springs">
+                </div>
+            </div>
+            <div class="towns">
+                <div>
+                    <h3>Fish Haven</h3>
+                    <h5 id="fish-motto">Motto</h5>
+                    <hr>
+                    <p id="fish-year">Year</p>
+                    <p id="fish-population">Population</p>
+                    <p id="fish-rain">Rain</p>
+                </div>
+                <div>
+                    <img id="fish-image" src="images/fish.jpg" alt="Fish Haven">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-wrapper">
+            <div id="contactInfo">
+                <h5>Contact Information</h5>
+                <p>(888) 888-8888</p>
+                <p>placeholder@place.null</p>
+                <img alt="Instagram" class="media" src="images/instagram.png">
+                <img alt="Facebook" class="media" src="images/facebook.png">
+                <img alt="Twitter" class="media" src="images/twitter.png">
+            </div>
+            <img id="map" src="images/placeholder-map.jpg" alt="Map">
+        </div>
+        <div id="bar-wrapper">
+            <div id="bar">
+                <p class="legal">&copy; <span id="copyrightyear"></span> | Kimberly Black | Idaho |
+                    <span id="weekday"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans JP',
+                    'Roboto Condensed: 300'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
