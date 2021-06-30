@@ -1,11 +1,11 @@
-/* https://coolors.co/302b42-8d99ae-f7f9fa-24acf0-0472d9 */
+/* https://coolors.co/302b42-8d99ae-c2c9d4-f7f9fa-24acf0-0472d9 */
 
 /*  */
 /* Navigation */
 /*  */
 nav {
     margin: -16px auto;
-    background-color: #302b42;
+    background-color: #c2c9d493;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -15,6 +15,7 @@ nav {
     grid-template-columns: auto;
     display: grid;
     font-size: 1em;
+    padding: 0px 10px;
 }
 
 #navigation li:first-child {
@@ -30,40 +31,126 @@ nav {
     padding: 1em;
     text-align: left;
     text-decoration: none;
-    color: #f7f9fa;
+    color: #302b42;
     font-weight: 700;
-    border-bottom: 2px solid #302b42;
+    /* border-bottom: 2px solid #302b42; */
 }
 
 #navigation a:hover,
 #navigation a.active:hover {
     color: #24acf0;
-    background-color: #302b42;
     border-bottom: 2px solid #24acf0;
 }
 
 #navigation a.active {
-    background-color: #302b42;
     color: #0472d9;
     border-bottom: 2px solid #0472d9;
 }
 
 #navigation.responsive li {
     display: block;
-    color: #f7f9fa;
+    color: #302b42;
     border-bottom: 2px solid #302b42;
 }
 
 /*  */
-/* Body */
+/* Subpages navigation */
 /*  */
 
+nav:nth-child(2) {
+    background-color: #c2c9d42f;
+}
+
+#subpages {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+    font-size: .8em;
+    padding: 0px 10px;
+}
+
+#subpages li:first-child {
+    display: block;
+}
+
+#subpages li {
+    display: none;
+}
+
+#subpages a {
+    display: block;
+    padding: 1em;
+    text-align: left;
+    text-decoration: none;
+    color: #302b42;
+    font-weight: 700;
+    border-bottom: 2px solid #c2c9d400;
+    /* border-bottom: 2px solid #302b42; */
+}
+
+#subpages a:hover,
+#subpages a.active:hover {
+    color: #24acf0;
+    border-bottom: 2px solid #24acf0;
+}
+
+#subpages a.active {
+    color: #0472d9;
+    border-bottom: 2px solid #0472d9;
+}
+
+#subpages.responsive li {
+    display: block;
+    color: #302b42;
+    border-bottom: 2px solid #302b42;
+}
+
+/*  */
+/* HTML & Body & Main */
+/*  */
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #f7f9fa;
+    min-height: 100%;
+}
+
+body {
+    background-color: white;
     color: #302b42;
     font-family: 'Libre Franklin', sans-serif;
 }
 
 main {
-    padding: 2rem 0rem;
+    padding: .5rem 10px;
+    min-height: 79.5vh;
+}
+
+/*  */
+/* AD section */
+/*  */
+#ad {
+    background-color: #0472d9;
+    color: #f7f9fa;
+    padding: .5rem;
+    border-radius: 20px 0px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.411);
+}
+
+/*  */
+/* Footer */
+/*  */
+footer {
+    background-color: #c2c9d493;
+    color: #302b42;
+    text-align: center;
+    font-size: .9em;
+    margin-bottom: 0;
+}
+
+footer p {
+    padding: 1em 0em;
 }
