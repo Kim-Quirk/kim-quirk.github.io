@@ -38,12 +38,14 @@ window.addEventListener('load', (event) => {
     var weekday = daysOfWeek(d);
     week.textContent = weekday[d.getDay()];
 
-    const pancake = document.getElementById('pancakes');
-    if (d.getDay() == 5) { //5 is Friday
+    if (document.URL.includes("preston.html")) {
+        const pancake = document.getElementById('pancakes');
+        if (d.getDay() == 5) { //5 is Friday
 
-        pancake.style.display = "block";
-    } else {
-        pancake.style.display = "none";
+            pancake.style.display = "block";
+        } else {
+            pancake.style.display = "none";
+        }
     }
 
     const dayNum = document.getElementById('day');
@@ -58,7 +60,9 @@ window.addEventListener('load', (event) => {
 
     const cry = document.querySelector("#copyrightyear");
     cry.textContent = d.getFullYear();
+})
 
+function windChill() {
     const chillP = document.getElementById("chill");
     var windchill = 0;
     var temp = document.getElementById("temp").innerHTML;
@@ -70,10 +74,19 @@ window.addEventListener('load', (event) => {
         windchill = "N/A"
     }
     chillP.innerHTML = windchill;
-})
+}
 
 async function getDailyWeather() {
-    const url = "https://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    let url;
+    if (document.URL.includes("preston.html")) {
+        url = "https://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    }
+    if (document.URL.includes("fishhaven.html")) {
+        url = "https://api.openweathermap.org/data/2.5/weather?zip=83287,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    }
+    if (document.URL.includes("sodasprings.html")) {
+        url = "https://api.openweathermap.org/data/2.5/weather?zip=83276,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    }
 
     const response = await fetch(url);
 
@@ -85,8 +98,16 @@ async function getDailyWeather() {
 }
 
 async function getForecastWeather() {
-    const url = "https://api.openweathermap.org/data/2.5/forecast?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
-
+    let url;
+    if (document.URL.includes("preston.html")) {
+        url = "https://api.openweathermap.org/data/2.5/forecast?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    }
+    if (document.URL.includes("fishhaven.html")) {
+        url = "https://api.openweathermap.org/data/2.5/forecast?zip=83287,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    }
+    if (document.URL.includes("sodasprings.html")) {
+        url = "https://api.openweathermap.org/data/2.5/forecast?zip=83276,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    }
     const response = await fetch(url);
 
     if (response.status == 200) {
@@ -111,11 +132,12 @@ function weather() {
             highTemp.textContent = Math.round(weather.main.temp_max);
             humid.textContent = weather.main.humidity;
             wind.textContent = Math.round(weather.wind.speed);
+            windChill();
         });
     const forecast = getForecastWeather()
         .then(function (weather) {
             console.log(weather);
-
+            windChill();
             var dayNum = 0;
             for (let i = 0; i < weather.list.length; i++) {
                 let date = new Date(weather.list[i].dt_txt);
@@ -128,7 +150,7 @@ function weather() {
                     temp.textContent = Math.round(weather.list[i].main.temp);
 
                     let img = document.getElementById('img' + dayNum);
-                    img.setAttribute('src', 'https://openweathermap.org/img/wn/'+ weather.list[i].weather[0].icon +'@2x.png')
+                    img.setAttribute('src', 'https://openweathermap.org/img/wn/' + weather.list[i].weather[0].icon + '@2x.png')
                     //https://openweathermap.org/img/wn/04d@2x.png
 
                     dayNum++;
@@ -188,5 +210,7 @@ async function getTowns() {
 }
 
 window.addEventListener('load', (event) => {
-    getTowns();
+    if (document.URL.includes("index.html")) {
+        getTowns();
+    }
 })
