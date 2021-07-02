@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Yomogi', cursive;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+section {
+    border: 5px solid purple;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
