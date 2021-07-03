@@ -155,7 +155,6 @@ function weather() {
 
                     dayNum++;
                 }
-                console.log(dayNum);
             }
         });
 }
@@ -209,8 +208,57 @@ async function getTowns() {
         });
 }
 
+async function getEvents() {
+    const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+    fetch(requestURL)
+        .then((response) => {
+            return response.json();
+        })
+        .then((jsonObject) => {
+            const towns = jsonObject['towns'];
+            var x;
+            if (document.URL.includes("preston.html")) {
+                x = 6;
+            }
+            if (document.URL.includes("fishhaven.html")) {
+                x = 2;
+            }
+            if (document.URL.includes("sodasprings.html")) {
+                x = 0;
+            }
+            console.log(x);
+            console.log(towns[6]);
+            let town = towns[x];
+            buildEventCard(town);
+        });
+}
+
+function buildEventCard(town) {
+    // let title = document.createElement("h6");
+    // title.innerHTML = "Upcoming Events";
+    // card.appendChild(title);
+    // let line = document.createElement("hr");
+    // card.appendChild(line);
+
+    for (let i = 0; i < town.events.length; i++) {
+        let card = document.createElement("p");
+        card.innerHTML = town.events[i];
+        document.querySelector("#events").appendChild(card);
+    }
+
+}
+
 window.addEventListener('load', (event) => {
     if (document.URL.includes("index.html")) {
         getTowns();
+    }
+    if (document.URL.includes("preston.html")) {
+        getEvents();
+    }
+    if (document.URL.includes("fishhaven.html")) {
+        getEvents();
+    }
+    if (document.URL.includes("sodasprings.html")) {
+        getEvents();
     }
 })
