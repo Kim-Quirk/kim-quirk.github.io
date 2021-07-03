@@ -71,7 +71,6 @@
         min-width: 240px;
     }
 
-
     .gallery-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -86,6 +85,25 @@
 
     div.contentbox:nth-child(3) h5 {
         text-align: center;
+    }
+
+    div.contentbox:nth-child(4) section {
+        padding: .5em 10%;
+    }
+
+    div.contentbox:nth-child(5) {
+        grid-column: 1/4;
+    }
+
+    div.contentbox:nth-child(5) img {
+        float: right;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        width: 70%;
+    }
+
+    div.contentbox:nth-child(5) p {
+        min-width: 30%;
     }
 
     table,

@@ -124,6 +124,7 @@ main {
     align-content: center;
     min-height: 46vh;
 }
+
 .gallery h1 {
     text-align: center;
 }
@@ -201,10 +202,44 @@ div.contentbox:nth-child(3) {
     width: 100%;
 }
 
-div.contentbox:nth-child(4) img {
+div.contentbox:nth-child(4) {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(221, 221, 221, 0);
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+div.contentbox:nth-child(4) section {
+    display: inline-block;
+    text-align: center;
+    border: 3px solid #003034b0;
+    color: #003034;
+    border-radius: 5px;
+    background-color: #83C5BE;
+    padding: .5em 5%;
+}
+
+div.contentbox:nth-child(4) section p {
+    font-weight: bold;
+}
+
+div.contentbox:nth-child(4) h5 {
+    margin: .9em;
+}
+
+div.contentbox:nth-child(5) img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+}
+
+#events hr {
+    background-color: #003e44;
+    border-color: #003e44;
+    border-radius: 2px;
+    width: fill;
 }
 
 /* Typography and color */
@@ -404,7 +439,8 @@ button {
     margin-bottom: 1.2rem;
 }
 
-.form-box input, .form-box select {
+.form-box input,
+.form-box select {
     display: block;
     width: 100%;
 }
@@ -414,7 +450,9 @@ button {
     display: inline-block;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     border-radius: 4px;
 }
 
@@ -468,7 +506,8 @@ div.towns {
     display: block;
 }
 
-.towns h3, .towns h5 {
+.towns h3,
+.towns h5 {
     text-align: center;
 }
 
