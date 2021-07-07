@@ -110,6 +110,18 @@ nav:nth-child(2) {
 /* HTML & Body & Main */
 /*  */
 
+hr {
+    display: block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #302B42;
+    background-color: #302B42;
+}
+
 html {
     height: 100%;
 }
@@ -153,4 +165,92 @@ footer {
 
 footer p {
     padding: 1em 0em;
+}
+
+
+/*  */
+/* Forms */
+/*  */
+.form #ad {
+    margin-bottom: 2em;
+}
+
+.form * {
+    box-sizing: border-box;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=tel],
+.form input[type=number],
+.form input[type=date],
+select,
+textarea {
+    color: #302B42;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #F7F9FA;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.form label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.form input[type=submit] {
+    background-color: #24ACF0;
+    color: #F7F9FA;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.form input[type=submit]:hover {
+    background-color: #0472D9;
+}
+
+.form .container {
+    border-radius: 5px;
+    background-color: #C2C9D4;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.form .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form .row {
+    display: grid;
+    grid-template-columns: 100%;
+    padding-bottom: 1.2em;
+}
+
+.form .row:last-child {
+    padding-bottom: 0em;
+}
+
+.form #radio label {
+    margin: .2em 0em;
+    padding: 0;
+    font-weight: normal;
+}
+
+/*  */
+/* Home page */
+/*  */
+
+#index img#kona {
+    width: 100%;
+    padding: 1em 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -4,7 +4,7 @@
     /*  */
 
     #navigation {
-        max-width: 780px;
+        max-width: 1080px;
     }
 
     /*  */
@@ -12,7 +12,11 @@
     /*  */
 
     main {
-        max-width: 780px;
+        max-width: 1080px;
         margin: 0 auto;
     }
+
+    /*  */
+    /* Fonts and Sizes */
+    /*  */
 }

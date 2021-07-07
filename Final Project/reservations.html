@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/large.css">
     <!-- Google fonts go here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
     <script src="scripts/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations | Temple Inn & Suites</title>
@@ -29,51 +29,183 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Arcu odio ut sem nulla pharetra diam sit amet. Magnis dis parturient montes nascetur ridiculus mus
-        mauris. Mollis aliquam ut porttitor leo a. Ut placerat orci nulla pellentesque dignissim enim sit. Vel eros
-        donec ac odio tempor. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis. Elementum
-        tempus egestas sed sed risus. Varius quam quisque id diam. Imperdiet nulla malesuada pellentesque elit eget
-        gravida cum.
-        <br>
-        Viverra accumsan in nisl nisi scelerisque eu ultrices. Pretium aenean pharetra magna ac placerat vestibulum
-        lectus mauris. Dolor sit amet consectetur adipiscing elit duis tristique. Massa sapien faucibus et molestie ac
-        feugiat sed lectus. Malesuada proin libero nunc consequat interdum. Vel quam elementum pulvinar etiam non.
-        Lacinia at quis risus sed vulputate odio ut enim. Diam quam nulla porttitor massa id neque aliquam vestibulum
-        morbi. Ut ornare lectus sit amet est placerat in egestas. Vulputate odio ut enim blandit volutpat maecenas.
-        Ullamcorper a lacus vestibulum sed. Id diam vel quam elementum. Ultrices tincidunt arcu non sodales neque
-        sodales ut. Auctor urna nunc id cursus metus aliquam eleifend mi in. Fames ac turpis egestas integer eget
-        aliquet nibh praesent. Feugiat pretium nibh ipsum consequat nisl.
-        <br>
-        Sit amet mattis vulputate enim nulla aliquet. Lobortis scelerisque fermentum dui faucibus. Eleifend quam
-        adipiscing vitae proin sagittis nisl rhoncus. Etiam non quam lacus suspendisse faucibus interdum posuere lorem
-        ipsum. Venenatis cras sed felis eget velit aliquet. Pulvinar elementum integer enim neque volutpat ac tincidunt
-        vitae. Massa placerat duis ultricies lacus sed turpis. Arcu non odio euismod lacinia at quis. Rutrum tellus
-        pellentesque eu tincidunt. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere.
-        Pulvinar mattis nunc sed blandit libero volutpat. Viverra maecenas accumsan lacus vel facilisis volutpat. Luctus
-        venenatis lectus magna fringilla. Vulputate ut pharetra sit amet. Massa ultricies mi quis hendrerit dolor.
-        Ultrices sagittis orci a scelerisque. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
-        <br>
-        Semper quis lectus nulla at volutpat diam ut. Varius duis at consectetur lorem. Sed velit dignissim sodales ut
-        eu sem integer vitae justo. Et ultrices neque ornare aenean euismod elementum. Nullam eget felis eget nunc. Vel
-        quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Egestas pretium aenean pharetra magna ac
-        placerat vestibulum lectus. Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Justo laoreet
-        sit amet cursus sit. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Risus commodo
-        viverra maecenas accumsan lacus. Odio pellentesque diam volutpat commodo sed egestas. Augue ut lectus arcu
-        bibendum at varius. Orci eu lobortis elementum nibh tellus molestie nunc non. Felis bibendum ut tristique et
-        egestas quis ipsum. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Urna et
-        pharetra pharetra massa massa. Urna molestie at elementum eu facilisis sed.
-        <br>
-        Congue mauris rhoncus aenean vel elit scelerisque mauris. Integer vitae justo eget magna fermentum iaculis eu
-        non. Quam elementum pulvinar etiam non quam lacus suspendisse. Varius sit amet mattis vulputate enim nulla
-        aliquet. Et netus et malesuada fames. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Facilisi morbi
-        tempus iaculis urna id volutpat lacus laoreet non. Vulputate ut pharetra sit amet. Vestibulum rhoncus est
-        pellentesque elit ullamcorper dignissim cras tincidunt. Lectus vestibulum mattis ullamcorper velit sed
-        ullamcorper morbi tincidunt ornare. Curabitur vitae nunc sed velit dignissim sodales. Ac auctor augue mauris
-        augue neque gravida. Leo integer malesuada nunc vel risus commodo. Posuere urna nec tincidunt praesent semper.
-        Nibh ipsum consequat nisl vel pretium lectus. Leo vel fringilla est ullamcorper eget nulla. Posuere morbi leo
-        urna molestie at elementum eu.
+    <main class="form">
+        <section id="ad">
+            <h1>Make a Reservation Today!</h1>
+        </section>
+        <div class="container">
+            <form action="thanks.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+                            placeholder="888-8888-8888">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Home Country</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="country" name="country" placeholder="United States">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Home State</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option hidden>Select One</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Washington">Washington</option>
+                            <option value="Washington D.C.">Washington D.C.</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Location</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option hidden>Select One</option>
+                            <option value="Alaska">Anchorage, Alaska</option>
+                            <option value="New Mexico">Albuquerque, New Mexico</option>
+                            <option value="Arizona">Gilbert, Arizona</option>
+                            <option value="Hawaii">Kona, Hawaii</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="roomType">Type of Room(s)</label>
+                    </div>
+                    <div class="col-75" id='radio'>
+                        <input type="radio" id="html" name="roomType" value="HTML">
+                        <label for="html">Queen</label><br>
+                        <input type="radio" id="css" name="roomType" value="CSS">
+                        <label for="css">King</label><br>
+                        <input type="radio" id="javascript" name="roomType" value="JavaScript">
+                        <label for="javascript">Twin</label><br>
+                        <input type="radio" id="javascript" name="roomType" value="JavaScript">
+                        <label for="javascript">Double Queen</label><br>
+                        <input type="radio" id="javascript" name="roomType" value="JavaScript">
+                        <label for="javascript">Studio</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="rooms">Number of Room(s)</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="rooms" name="rooms" placeholder="1" min="1" max="300">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dateStart">Date Start</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="dateStart" name="dateStart">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="dateEnd">Date End</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="dateEnd" name="dateEnd">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Additional Notes</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject"
+                            placeholder="Please put any special accommodations you might like or comments here."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <p class="legal">&copy; <span id="copyrightyear"></span> | Temple Inn & Suites | Bethesda, MD |
