@@ -1,0 +1,91 @@
+[{
+        "name": "Anchorage Alaska Temple",
+        "phone": "907-348-7890",
+        "email": "Log in to send an email to the temple",
+        "address1": "13161 Brayton Dr",
+        "city": "Anchorage",
+        "state": "Alaska",
+        "zip": 99516,
+        "imageurl": "https://assets.ldscdn.org/22/b3/22b36eeb6bcf2bb8f9f23a905f1434599ee6b4f4/anchorage_alaska_temple_lds.jpeg",
+        "services": [
+            "No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"
+        ],
+        "history": [
+            "4 October 1997", "Announced", "17 April 1998", "Groundbreaking", "9 January 1999", "Dedicated", "8 February 2004", "Rededicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Friday, 20 August 2021 (Limited Operations)", "Saturday, 2 October 2021", "Wednesday, 24 November 2021 - Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021 - Saturday, 1 January 2022", "Tuesday, 22 March 2022 - Monday, 4 April 2022"
+        ],
+        "summary": "The Anchorage Alaska Temple stands just east of highly traveled Seward Highway in southern Anchorage. A beautiful grove of trees and the majestic Chugach Mountains create a stunning backdrop for this holy house. The temple is part of a complex with the Anchorage Alaska Stake Center; the two buildings share a common parking lot."
+    },
+
+    {
+        "name": "Albuquerque New Mexico Temple",
+        "phone": "505-822-5110",
+        "email": "Log in to send an email to the temple",
+        "address1": "10301 San Francisco Rd NE",
+        "city": "Albuquerque",
+        "state": "New Mexico",
+        "zip": 87122,
+        "imageurl": "https://assets.ldscdn.org/af/68/af688a065f43e58a704ef20690b2d1c8000876a9/albuquerque_temple_lds.jpeg",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "4 April 1997", "Announced", "20 June 1998", "Groundbreaking", "5 March 2000", "Dedicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Saturday, 2 October 2021", "Monday, 4 October 2021 - Monday, 18 October 2021", "Wednesday, 24 November 2021 (Limited Operations)", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021 (Limited Operations)"
+        ],
+        "summary": "Like a blossom in the desert, the beautiful Albuquerque New Mexico Temple adorns the arid landscape of northeastern Albuquerque in the residential neighborhood of North Albuquerque Acres. The temple grounds are a lush oasis of green grass and vibrantly colored flora including many native plant species. At the main entrance, a magnificent spraying water feature delights patrons as they enter and leave the sacred structure. The exterior is prominently ornamented with heavenly symbols including moons, stars, and suns."
+    },
+    {
+        "name": "Gilbert Arizona Temple",
+        "phone": "480-822-5000",
+        "email": "Log in to send an email to the temple",
+        "address1": "3301 S Greenfield Rd",
+        "city": "Gilbert",
+        "state": "Arizona",
+        "zip": 85297,
+        "imageurl": "https://assets.ldscdn.org/1a/9b/1a9b4d17fab94f3ddfc0504cbe9bfb16ef2b3186/gilbert_arizona_temple.jpeg",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "10 April 2008", "Announced", "13 November 2010", "Groundbreaking", "2 March 2014", "Dedicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Saturday, 2 October 2021", "Monday, 4 October 2021 - Monday, 22 November 2021", "Wednesday, 24 November 2021 - Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021"
+        ],
+        "summary": "The Gilbert Arizona Temple was the fourth temple built in Arizona, following the Mesa Arizona Temple (1927), the Snowflake Arizona Temple (2002), and The Gila Valley Arizona Temple (2010). During the month-long public open house of the Gilbert Arizona Temple, 407,020 guests toured the facility. Local media covered the event including a 30-minute prime-time special produced by one news station. President Thomas S. Monson presided at the dedication of the Gilbert Arizona Temple, but at his request, the prayer in the first dedicatory session was offered by President Henry B. Eyring, first counselor in the First Presidency."
+    },
+
+    {
+        "name": "Kona Hawaii Temple",
+        "phone": "808-331-8504",
+        "email": "Log in to send an email to the temple",
+        "address1": "75-230 Kalani St",
+        "city": "Kailua-Kona",
+        "state": "Hawaii",
+        "zip": 96740,
+        "imageurl": "https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "services": [
+            "No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"
+        ],
+        "history": [
+            "7 May 1998", "Announced", "13 March 1999", "Groundbreaking", "23 January 2000", "Dedicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Monday, 13 September 2021 - Monday, 27 September 2021", "Saturday, 2 October 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021", "Saturday, 25 December 2021", "Friday, 31 December 2021"
+        ],
+        "summary": "Clad with bright white marble and surrounded by statuesque palm trees, the Kona Hawaii Temple is a handsome landmark along Queen Ka'ahumanu Highway. The temple is located in the coastal community of Kailua-Kona on the Big Island, just 8 miles south of the Kona International Airport. Built on a hillside above the stake center for the Kona Hawaii Stake, the temple features a pair of staircases flanking a beautiful garden area with palm trees and a terraced water feature."
+    }
+]

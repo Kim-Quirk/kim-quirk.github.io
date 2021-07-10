@@ -1,0 +1,20 @@
+@media only screen and (min-width: 32.5em) {
+     h1 {
+        font-size:2.5rem;
+        padding-left: 95px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    header, footer {
+        border-radius: 15px;
+    }
+
+    .profile {
+        float: right;
+        box-shadow: 0 0 17px black;
+        width: 150px;
+    }
+}

@@ -227,7 +227,7 @@
     div.towns {
         display: flex;
         flex-direction: row;
-        margin: 1em;
+        margin: 1em 0em;
     }
 
     div.towns:nth-child(odd) {

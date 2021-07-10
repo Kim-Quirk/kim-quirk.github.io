@@ -179,9 +179,9 @@ img.gallery {
 
 .contentbox {
     background-color: #DCCDE4;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    padding: 1em;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    padding: .8em;
 }
 
 div.contentbox:first-of-type {
@@ -192,6 +192,11 @@ div.contentbox:first-of-type {
 
 div.contentbox:nth-child(2) p {
     margin: .1em;
+}
+
+div.contentbox:nth-child(2) h5 {
+    margin-top: 0;
+    margin-bottom: 1.3em;
 }
 
 div.contentbox:nth-child(3) {
@@ -360,6 +365,11 @@ h6 {
     padding-bottom: 1em;
 }
 
+#googleMap {
+    padding: 0;
+    margin: 0px;
+}
+
 footer {
     background-color: #83C5BE;
 }
@@ -375,6 +385,7 @@ footer img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    padding: 0;
 }
 
 #map {
@@ -459,6 +470,10 @@ select {
 textarea {
     resize: none;
     width: 100%;
+}
+
+input, textarea {
+    padding: .5em .5em;
 }
 
 .form-box:nth-child(10) input {
