@@ -8,21 +8,25 @@ form {
     background-color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
-    max-width: 20em;
+    width: 20em;
     padding: 2em;
-    margin: 0 auto;
-    margin-top: 2em;
 }
-    
+
+.contact-form {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 button {
-    background-color: rgb(18,102,232);
+    background-color: rgb(18, 102, 232);
     border: none;
     border-radius: 5px;
     padding: .5em 1em;
     margin-bottom: 1em;
     color: #edf3f8;
-    
+
 }
 
 button:hover {
@@ -72,6 +76,5 @@ label {
     color: rgb(102, 102, 102);
     width: 100%;
     margin: 1em auto;
-    
-}
 
+}
