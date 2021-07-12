@@ -6,7 +6,7 @@
 nav {
     margin: -16px auto;
     background-color: #c2c9d493;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Encode Sans SC', sans-serif;
 }
 
 #navigation {
@@ -253,4 +253,14 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*  */
+/* Fonts */
+/*  */
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 800;
+    letter-spacing: .05rem;
 }

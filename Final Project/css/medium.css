@@ -111,6 +111,29 @@
     }
 
     /*  */
+    /* Services Page */
+    /*  */
+
+    #services #wrapper div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #services #wrapper div:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    div {
+        padding: 1em 0em;
+    }
+
+    #services #wrapper img{
+        max-width: 25em;
+        padding: 0em 1em;
+    }
+
+    /*  */
     /* Fonts and Sizes */
     /*  */
 
