@@ -256,6 +256,46 @@ textarea {
 }
 
 /*  */
+/* Temple */
+/*  */
+#temples h1:first-of-type {
+    margin-top: .2em;
+}
+
+#temples h1 {
+    background-color: #0472d9;
+    color: #f7f9fa;
+    padding: 1rem;
+    border-radius: 20px 0px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.411);
+    margin-bottom: 0;
+}
+
+#temples p {
+    margin-bottom: 0.5em;
+}
+
+#temples .card {
+    background-color: #c2c9d42a;
+    padding: 1em;
+    margin-bottom: 3em;
+    border-radius: 15px;
+    border: 2px solid #c2c9d4ad;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.438);
+}
+
+#temples .card:last-of-type {
+    margin-bottom: 0em;
+}
+
+#temples .card img {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    width: 100%;
+
+}
+
+/*  */
 /* Fonts */
 /*  */
 
