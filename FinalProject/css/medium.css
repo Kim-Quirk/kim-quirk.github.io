@@ -186,6 +186,15 @@
     }
 
     /*  */
+    /* Banner */
+    /*  */
+    .banner a #ad {
+        max-width: 640px;
+        justify-self: center;
+        /* margin: 0 20px; */
+    }
+
+    /*  */
     /* Fonts and Sizes */
     /*  */
 

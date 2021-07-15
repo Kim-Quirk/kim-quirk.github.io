@@ -17,6 +17,14 @@
     }
 
     /*  */
+    /* Banner */
+    /*  */
+    .banner a #ad {
+        max-width: 1080px;
+        justify-self: center;
+    }
+
+    /*  */
     /* Fonts and Sizes */
     /*  */
 }
