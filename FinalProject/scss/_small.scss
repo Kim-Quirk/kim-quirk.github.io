@@ -31,26 +31,26 @@ nav {
     padding: 1em;
     text-align: left;
     text-decoration: none;
-    color: #302b42;
+    color: $black;
     font-weight: 700;
     /* border-bottom: 2px solid #302b42; */
 }
 
 #navigation a:hover,
 #navigation a.active:hover {
-    color: #24acf0;
-    border-bottom: 2px solid #24acf0;
+    color: $lightBlue;
+    border-bottom: 2px solid $lightBlue;
 }
 
 #navigation a.active {
-    color: #0472d9;
-    border-bottom: 2px solid #0472d9;
+    color: $darkBlue;
+    border-bottom: 2px solid $darkBlue;
 }
 
 #navigation.responsive li {
     display: block;
-    color: #302b42;
-    border-bottom: 2px solid #302b42;
+    color: $black;
+    border-bottom: 2px solid $black;
 }
 
 /*  */
@@ -58,7 +58,7 @@ nav {
 /*  */
 
 nav:nth-child(2) {
-    background-color: #c2c9d42f;
+    background-color: #c2c9d449;
 }
 
 #subpages {
@@ -83,7 +83,7 @@ nav:nth-child(2) {
     padding: 1em;
     text-align: left;
     text-decoration: none;
-    color: #302b42;
+    color: $black;
     font-weight: 700;
     border-bottom: 2px solid #c2c9d400;
     /* border-bottom: 2px solid #302b42; */
@@ -91,19 +91,19 @@ nav:nth-child(2) {
 
 #subpages a:hover,
 #subpages a.active:hover {
-    color: #24acf0;
-    border-bottom: 2px solid #24acf0;
+    color: $lightBlue;
+    border-bottom: 2px solid $lightBlue;
 }
 
 #subpages a.active {
-    color: #0472d9;
-    border-bottom: 2px solid #0472d9;
+    color: $darkBlue;
+    border-bottom: 2px solid $darkBlue;
 }
 
 #subpages.responsive li {
     display: block;
-    color: #302b42;
-    border-bottom: 2px solid #302b42;
+    color: $black;
+    border-bottom: 2px solid $black;
 }
 
 /*  */
@@ -118,8 +118,8 @@ hr {
     margin-right: auto;
     border-style: solid;
     border-width: 2px;
-    border-color: #302B42;
-    background-color: #302B42;
+    border-color: $black;
+    background-color: $black;
 }
 
 html {
@@ -132,7 +132,7 @@ body {
 
 body {
     background-color: white;
-    color: #302b42;
+    color: $black;
     font-family: 'Libre Franklin', sans-serif;
 }
 
@@ -148,15 +148,6 @@ main#index {
     padding-top: 0;
 }
 
-img {
-    z-index: -1;
-    width: 100%;
-    grid-column: 1/3;
-    grid-row: 1/7;
-    object-fit: contain;
-    overflow: hidden;
-}
-
 .banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,6 +155,15 @@ img {
     margin: 0;
     padding: 0;
     margin-top: -5px;
+
+    img {
+        z-index: -1;
+        width: 100%;
+        grid-column: 1/3;
+        grid-row: 1/7;
+        object-fit: contain;
+        overflow: hidden;
+    }
 }
 
 .banner a {
@@ -174,7 +174,7 @@ img {
 }
 
 .banner a:hover #ad {
-    background-color: #24ACF0;
+    background-color: $lightBlue;
     box-shadow: 0px 0px 10px rgba(231, 231, 231, 0.521);
 }
 
@@ -182,8 +182,8 @@ img {
 /* AD section */
 /*  */
 #ad {
-    background-color: #0472d9;
-    color: #f7f9fa;
+    background-color: $darkBlue;
+    color: $white;
     padding: 1rem;
     border-radius: 20px 0px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.411);
@@ -203,7 +203,7 @@ img {
 /*  */
 footer {
     background-color: #c2c9d493;
-    color: #302b42;
+    color: $black;
     text-align: center;
     font-size: .9em;
     margin-bottom: 0;
@@ -232,10 +232,10 @@ footer p {
 .form input[type=date],
 select,
 textarea {
-    color: #302B42;
+    color: $black;
     width: 100%;
     padding: 12px;
-    border: 1px solid #F7F9FA;
+    border: 1px solid $white;
     border-radius: 4px;
     resize: vertical;
 }
@@ -247,8 +247,8 @@ textarea {
 }
 
 .form input[type=submit] {
-    background-color: #24ACF0;
-    color: #F7F9FA;
+    background-color: $lightBlue;
+    color: $white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -257,12 +257,12 @@ textarea {
 }
 
 .form input[type=submit]:hover {
-    background-color: #0472D9;
+    background-color: $darkBlue;
 }
 
 .form .container {
     border-radius: 5px;
-    background-color: #C2C9D4;
+    background-color: $lightGrey;
     padding: 20px;
 }
 
@@ -309,8 +309,8 @@ textarea {
 }
 
 #temples h1 {
-    background-color: #0472d9;
-    color: #f7f9fa;
+    background-color: $darkBlue;
+    color: $white;
     padding: 1rem;
     border-radius: 20px 0px;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.411);
@@ -342,15 +342,46 @@ textarea {
 }
 
 /*  */
+/* Services Page */
+/*  */
+
+#services {
+    #ad:first-of-type {
+        margin-top: 1em;
+    }
+
+    #wrapper {
+        img {
+            width: 100%;
+            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+            border: 2px solid $black;
+            border-radius: 5px;
+        }
+        section {
+            padding-top: 1em;
+            padding-bottom: 5em;
+        }
+    }
+}
+
+/*  */
 /* Fonts */
 /*  */
 
-h1, h2, h3, h4, h5, h6, nav {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
     font-family: 'Encode Sans SC', sans-serif;
     font-weight: 800;
     letter-spacing: .05rem;
 }
 
-p, section, div {
+p,
+section,
+div {
     line-height: 1.5em;
 }
