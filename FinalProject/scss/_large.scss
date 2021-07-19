@@ -5,13 +5,17 @@
     /*  */
 
     div.logo-banner {
-        background-color: #DCE0E6;
-
         div.grid-container {
-            grid-template-columns: 100px 1fr;
+            grid-template-columns: 130px 1fr;
             gap: 2em;
             max-width: 1080px;
             margin: 0 auto;
+
+            h1 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                font-size: 2.5em;
+            }
 
         }
     }
@@ -96,7 +100,8 @@
     p,
     li,
     ul,
-    ol {
-        font-size: 1.2em;
+    ol,
+    section {
+        font-size: 1.05em;
     }
 }
