@@ -1,10 +1,15 @@
 window.addEventListener('load', () => {
     // Javascript for Navigation
     const hambutton = document.querySelector('.ham');
+    const subhambutton = document.querySelector('.hamSub');
     const mainnav = document.querySelector('#navigation');
+    const subnav = document.querySelector('#subpages');
 
     hambutton.addEventListener('click', () => {
         mainnav.classList.toggle('responsive')
+    }, false);
+    subhambutton.addEventListener('click', () => {
+        subnav.classList.toggle('responsive')
     }, false);
 
     // Javascript for Footer copyright and date information

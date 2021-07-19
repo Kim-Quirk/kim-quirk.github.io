@@ -1,20 +1,39 @@
 @media only screen and (min-width: 34.5em) {
 
     /*  */
+    /* Logo Banner */
+    /*  */
+
+    div.logo-banner {
+        background-color: #DCE0E6;
+
+        div.grid-container {
+            grid-template-columns: 100px 1fr;
+            gap: 2em;
+            max-width: 640px;
+            margin: 0 auto;
+
+        }
+    }
+
+    /*  */
     /* Navigation */
     /*  */
     nav {
         max-width: 100%;
         margin: 0 auto;
-        border-bottom: 2px solid $white;
+        padding: 0px 20px;
+    }
+
+    ul#navigation {
+        width: 100%;
     }
 
     #navigation {
         grid-template-columns: repeat(5, auto);
-        font-size: 1.2em;
+        font-size: 1em;
         max-width: 640px;
         margin: 0 auto;
-        padding: 0px 20px;
     }
 
     #navigation li:first-child {
@@ -28,10 +47,9 @@
     #navigation a {
         text-align: center;
         display: block;
-        padding-top: .8em;
-        padding-bottom: .8em;
         text-decoration: none;
         font-weight: 700;
+        padding: .8em 0em;
     }
 
     /*  */
@@ -45,6 +63,7 @@
         margin: 0 auto;
         padding: 0px 20px;
         margin-top: -2px;
+        border-bottom: 2px solid $white;
     }
 
     #subpages li:first-child {
@@ -78,10 +97,14 @@
     /*  */
     .form .row {
         display: grid;
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 1fr;
         padding-bottom: 1em;
         margin-top: 0;
         padding-top: 0;
+    }
+
+    .form .row:nth-child(10),  .form .row:nth-child(11) {
+        grid-template-columns: 170px 1fr;
     }
 
     .form input[type=submit] {
@@ -94,7 +117,8 @@
         float: right;
         width: max-content;
         justify-self: right;
-        grid-column: 2/3;
+        // grid-column: 2/3;
+        width: 300px;
     }
 
     /*  */
@@ -113,6 +137,7 @@
     }
 
     #grid-wrapper-info {
+        width: 90%;
         display: flex;
         justify-content: space-between;
         padding: .5em 2em;
@@ -165,7 +190,7 @@
             h3 {
                 grid-column: 1/3;
                 grid-row: 1/2;
-                margin-bottom: -1em;
+                margin-bottom: 0em;
             }
 
             section {
@@ -217,6 +242,10 @@
         grid-template-columns: 40% 60%;
     }
 
+    #temples h1 {
+        font-size: 1.8em;
+    }
+
     #temples .left {
         grid-column: 1/2;
     }
@@ -236,7 +265,7 @@
     /*  */
     /* Banner */
     /*  */
-    .banner a #ad {
+    .banner a .blue-title {
         max-width: 640px;
         justify-self: center;
         /* margin: 0 20px; */
@@ -246,7 +275,34 @@
     /* Fonts and Sizes */
     /*  */
 
-    * {
-        font-size: large;
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    h6 {
+        font-size: 1em;
+    }
+
+    p,
+    li,
+    ul,
+    ol  {
+        font-size: 1em;
     }
 }

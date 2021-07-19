@@ -1,10 +1,28 @@
 @media only screen and (min-width: 50.5em) {
+
+    /*  */
+    /* Logo Banner */
+    /*  */
+
+    div.logo-banner {
+        background-color: #DCE0E6;
+
+        div.grid-container {
+            grid-template-columns: 100px 1fr;
+            gap: 2em;
+            max-width: 1080px;
+            margin: 0 auto;
+
+        }
+    }
+
     /*  */
     /* Navigation */
     /*  */
 
     #navigation {
         max-width: 1080px;
+        font-size: 1em;
     }
 
     /*  */
@@ -19,12 +37,66 @@
     /*  */
     /* Banner */
     /*  */
-    .banner a #ad {
+    .banner a .blue-title {
         max-width: 1080px;
         justify-self: center;
     }
 
     /*  */
+    /* Index */
+    /*  */
+
+    #temple-stuff {
+        width: 80%;
+    }
+
+    /*  */
+    /* Temples */
+    /*  */
+    
+    #temples h1 {
+        font-size: 2.2em;
+    }
+
+    /*  */
+    /* Subpages navigation */
+    /*  */
+
+    #subpages {
+        font-size: 1em;
+    }
+
+    /*  */
     /* Fonts and Sizes */
     /*  */
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.8em;
+    }
+
+    h5 {
+        font-size: 1.6em;
+    }
+
+    h6 {
+        font-size: 1.2em;
+    }
+
+    p,
+    li,
+    ul,
+    ol {
+        font-size: 1.2em;
+    }
 }
