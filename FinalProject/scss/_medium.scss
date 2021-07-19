@@ -159,8 +159,9 @@
         width: 90%;
         display: flex;
         justify-content: space-between;
-        padding: .5em 2em;
+        padding: .5em 0em;
         padding-top: 1em;
+        margin: 0 auto;
     }
 
     #grid-wrapper-info h4 {
@@ -174,6 +175,7 @@
     #temple-stuff {
         width: 90%;
         background-color: $lightGrey;
+        margin-top: 2em;
         margin-left: auto;
         margin-right: auto;
         padding: 0;
@@ -279,6 +281,61 @@
         align-self: center;
         width: 100%;
     }
+
+    /*  */
+/* Contact Page */
+/*  */
+
+.contact {
+    div.manager {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+
+        img {
+            max-width: 20em;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: right;
+            margin: 1em 0;
+        }
+
+        section {
+            grid-column: 1/2;
+            grid-row: 1/2;
+
+            p {
+                margin-right: 1em;
+            }
+        }
+    }
+
+    img#working {
+        display: block;
+    }
+
+    section.info {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1em;
+
+        align-content: space-evenly;
+        justify-content: space-evenly;
+
+        img {
+            max-width: 20em;
+            align-self: center;
+        }
+
+        table {
+            border-spacing: 5px;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+    }
+}
 
     /*  */
     /* Banner */

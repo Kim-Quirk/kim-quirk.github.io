@@ -542,11 +542,51 @@ footer p {
             width: 100%;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
+            // height: 300px;
+            // object-fit: cover;
         }
 
         section {
             padding-top: 1em;
             padding-bottom: 5em;
+        }
+    }
+}
+
+/*  */
+/* Contact Page */
+/*  */
+
+.contact {
+
+    display: block;
+
+    .blue-title {
+        margin: 2em 0;
+    }
+
+    img {
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        max-width: 20em;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    img#working {
+        display: none;
+    }
+
+    hr {
+        margin: 1em 0;
+    }
+
+    section.info {
+        div {
+            margin: 0 auto;
+            max-width: 22em;
+            width: 100%;
         }
     }
 }

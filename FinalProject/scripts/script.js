@@ -8,9 +8,13 @@ window.addEventListener('load', () => {
     hambutton.addEventListener('click', () => {
         mainnav.classList.toggle('responsive')
     }, false);
-    subhambutton.addEventListener('click', () => {
-        subnav.classList.toggle('responsive')
-    }, false);
+
+    if (document.URL.includes("services.html") || document.URL.includes("missionary.html") || document.URL.includes("reception.html"))
+    {
+        subhambutton.addEventListener('click', () => {
+            subnav.classList.toggle('responsive')
+        }, false);
+    }
 
     // Javascript for Footer copyright and date information
     var d = new Date();
@@ -49,6 +53,17 @@ function daysOfWeek(date) {
 
 // window.addEventListener('load', () => {
 // })
+
+async function getDailyWeather(zip) {
+    let url = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+    const response = await fetch(url);
+    if (response.status == 200) {
+        return response.json();
+    } else {
+        throw new Error("No weather found + " + response.status);
+    }
+}
+
 async function getTemples() {
     const requestURL = 'json/temples.json';
 
@@ -72,6 +87,7 @@ async function getTemples() {
                 let closures = document.createElement('p');
                 let summary = document.createElement('p');
                 let image = document.createElement('img');
+                let temp = document.createElement('p');
 
                 h2.textContent = temples[i].name;
                 phone.innerHTML += `
@@ -116,6 +132,24 @@ async function getTemples() {
                     }
                     history.innerHTML += `${historyS[i]}`;
                 }
+
+                const current = getDailyWeather(temples[i].zip)
+                    .then(function (weather) {
+                        console.log(weather);
+                        temp.innerHTML = `
+                            <p><b>Current Weather</b>
+                            <br>
+                            Condition: ${weather.weather[0].main}
+                            <br>
+                            Temperature: ${Math.round(weather.main.temp)}°F
+                            <br>
+                            Humidity: ${weather.main.humidity}%
+                            <br>
+                            Wind Speed: ${ Math.round(weather.wind.speed)} MPH
+                            </p>
+                            `;
+                    });
+
                 ordinance.innerHTML = `
                 <p><b>Ordinance and Session Schedule</b>
                 <br>
@@ -152,6 +186,7 @@ async function getTemples() {
 
                 card.appendChild(h2);
                 card.appendChild(grid);
+                card.appendChild(temp);
                 card.appendChild(ordinance);
                 card.appendChild(summary);
                 card.appendChild(closures);
@@ -164,5 +199,8 @@ async function getTemples() {
 }
 
 window.addEventListener('load', (event) => {
-    getTemples();
+    if (document.URL.includes("temples.html"))
+    {
+        getTemples();
+    }
 })
