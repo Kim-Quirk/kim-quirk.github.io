@@ -9,8 +9,7 @@ window.addEventListener('load', () => {
         mainnav.classList.toggle('responsive')
     }, false);
 
-    if (document.URL.includes("services.html") || document.URL.includes("missionary.html") || document.URL.includes("reception.html"))
-    {
+    if (document.URL.includes("services.html") || document.URL.includes("missionary.html") || document.URL.includes("reception.html")) {
         subhambutton.addEventListener('click', () => {
             subnav.classList.toggle('responsive')
         }, false);
@@ -35,6 +34,19 @@ window.addEventListener('load', () => {
     const footer = document.querySelector("#copyrightyear");
     footer.textContent = d.getFullYear();
 })
+
+function expandImage(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
 
 // Function that creates returns the name of the weekday
 function daysOfWeek(date) {
@@ -199,8 +211,7 @@ async function getTemples() {
 }
 
 window.addEventListener('load', (event) => {
-    if (document.URL.includes("temples.html"))
-    {
+    if (document.URL.includes("temples.html")) {
         getTemples();
     }
 })

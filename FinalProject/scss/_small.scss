@@ -554,10 +554,187 @@ footer p {
 }
 
 /*  */
+/* Missionary Page */
+/*  */
+
+#mission {
+
+    img {
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    /* The expanding image container (positioning is needed to position the close button and the text) */
+    .container {
+        position: relative;
+        display: none;
+        padding: 0;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: $black;
+        text-shadow: .5px .5px $transparent, -.5px -.5px $transparent, .5px 0px $transparent, 0px -.5px $transparent, 0px .5px $transparent, -.5px 0px $transparent;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the image */
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: $black;
+        font-size: 35px;
+        cursor: pointer;
+        text-shadow: .5px .5px $transparent, -.5px -.5px $transparent, .5px 0px $transparent, 0px -.5px $transparent, 0px .5px $transparent, -.5px 0px $transparent;
+    }
+
+    //form
+    .form {
+
+        border-radius: 15px;
+        padding: 20px;
+        border: 2px solid $lightBlue;
+
+        div {
+            padding: 0;
+            margin: 0;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        input[type=number],
+        input[type=date],
+        select,
+        textarea {
+            color: rgb(130, 121, 117);
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0);
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            resize: vertical;
+        }
+
+        label#textarea {
+            padding: 0;
+        }
+
+        textarea {
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        label {
+            padding: 12px 12px 0px 12px;
+            display: inline-block;
+            color: $darkBlue;
+        }
+
+        input[type=submit] {
+            background-color: $lightBlue;
+            color: $white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: $darkBlue;
+        }
+
+
+        .row {
+            display: grid;
+            grid-template-columns: 100%;
+            padding-bottom: 1.2em;
+        }
+
+        .row:last-child {
+            padding-bottom: 0em;
+        }
+    }
+}
+
+/*  */
+/* Wedding Reception Page */
+/*  */
+
+.wedding {
+
+    .blue-title {
+        margin-bottom: 1em;
+    }
+
+    img {
+        width: 80%;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        margin: 0em 10%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+        tr {
+            background-color: #66bde983;
+
+            td.middle {
+                border-left: 2px solid $black;
+                border-right: 2px solid $black;
+            }
+        }
+
+        tr:nth-child(odd) {
+            background-color: #b0dcf183;
+        }
+
+        th {
+            font-size: 1.2em;
+            border-bottom: 2px solid $black;
+        }
+
+        th, td {
+            padding: 1em;
+        }
+    }
+}
+
+/*  */
 /* Contact Page */
 /*  */
 
 .contact {
+
+    span {
+        color: #302b4270;
+        font-size: .8em;
+        text-align: center;
+    }
 
     display: block;
 
@@ -568,6 +745,9 @@ footer p {
     img {
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
         border-radius: 5px;
+    }
+
+    img, span {
         max-width: 20em;
         width: 100%;
         margin: 0 auto;
@@ -635,12 +815,17 @@ p,
 li,
 ul,
 ol,
-section {
-    font-size: .9em;
+section,
+div {
+    font-size: 1em;
 }
 
 p,
 section,
 div {
     line-height: 1.5em;
+}
+
+div {
+    font-family: 'Libre Franklin', sans-serif;
 }
