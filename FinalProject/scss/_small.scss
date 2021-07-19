@@ -531,10 +531,16 @@ footer p {
     }
 
     #wrapper {
+        div {
+            border: 2px solid $darkBlue;
+            border-radius: 15px;
+            padding: 1em;
+            margin: 2em 0;
+        }
+
         img {
             width: 100%;
-            box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
-            border: 2px solid $black;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
         }
 
