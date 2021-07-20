@@ -408,78 +408,6 @@ footer p {
     }
 }
 
-// .form .blue-title {
-//     margin-bottom: 2em;
-// }
-
-// .form * {
-//     box-sizing: border-box;
-// }
-
-// .form input[type=text],
-// .form input[type=email],
-// .form input[type=tel],
-// .form input[type=number],
-// .form input[type=date],
-// select,
-// textarea {
-//     color: $black;
-//     width: 100%;
-//     padding: 12px;
-//     border: 1px solid $white;
-//     border-radius: 4px;
-//     resize: vertical;
-// }
-
-// .form label {
-//     padding: 12px 12px 12px 0;
-//     display: inline-block;
-//     font-weight: bold;
-// }
-
-// .form input[type=submit] {
-//     background-color: $lightBlue;
-//     color: $white;
-//     padding: 12px 20px;
-//     border: none;
-//     border-radius: 4px;
-//     cursor: pointer;
-//     float: right;
-// }
-
-// .form input[type=submit]:hover {
-//     background-color: $darkBlue;
-// }
-
-// .form .container {
-//     border-radius: 5px;
-//     background-color: $lightGrey;
-//     padding: 20px;
-// }
-
-// /* Clear floats after the columns */
-// .form .row:after {
-//     content: "";
-//     display: table;
-//     clear: both;
-// }
-
-// .form .row {
-//     display: grid;
-//     grid-template-columns: 100%;
-//     padding-bottom: 1.2em;
-// }
-
-// .form .row:last-child {
-//     padding-bottom: 0em;
-// }
-
-// .form #radio label {
-//     margin: .2em 0em;
-//     padding: 0;
-//     font-weight: normal;
-// }
-
 /*  */
 /* Home page */
 /*  */
@@ -558,13 +486,6 @@ footer p {
             width: 100%;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
-            // height: 300px;
-            // object-fit: cover;
-        }
-
-        section {
-            padding-top: 1em;
-            padding-bottom: 5em;
         }
     }
 }
