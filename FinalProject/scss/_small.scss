@@ -113,8 +113,12 @@ nav#subnav {
 
 }
 
-#subpages li:first-child {
-    display: block;
+// #subpages li:first-child {
+//     display: block;
+// }
+
+#subpages li:first-child(even) {
+    display: #e8ebf0ec;
 }
 
 #subpages li {
@@ -128,6 +132,12 @@ nav#subnav {
     text-decoration: none;
     color: $black;
     font-weight: 700;
+    padding-left: 26px;
+}
+
+#subHammy {
+    padding-left: 16px;
+    font-size: .8em;
 }
 
 #subpages a:hover,

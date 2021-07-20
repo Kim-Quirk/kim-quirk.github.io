@@ -53,11 +53,16 @@
         text-decoration: none;
         font-weight: 700;
         padding: .8em 0em;
+        border-bottom: 2px solid #DCE0E6;
     }
 
     /*  */
     /* Subpages navigation */
     /*  */
+
+    #navigation li#subHammy {
+        display: none;
+    }
 
     #subpages {
         grid-template-columns: repeat(2, auto);
@@ -67,10 +72,6 @@
         padding: 0px 20px;
         margin-top: -2px;
         border-bottom: 2px solid $white;
-    }
-
-    #subpages li:first-child {
-        display: none;
     }
 
     #subpages li {
