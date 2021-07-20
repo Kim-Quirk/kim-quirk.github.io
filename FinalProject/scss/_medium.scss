@@ -163,6 +163,7 @@
         display: block;
         padding: 0;
         border-radius: 5px 5px 0px 0px;
+        max-width: 870px;
     }
 
     #index h2 {
@@ -188,6 +189,7 @@
 
     #temple-stuff {
         width: 90%;
+        max-width: 870px;
         background-color: $lightGrey;
         margin-top: 2em;
         margin-left: auto;
@@ -219,6 +221,7 @@
                 object-fit: contain;
                 overflow: hidden;
                 width: 100%;
+                max-width: 520px;
             }
 
             h3 {
@@ -313,9 +316,7 @@
                 padding: 0;
 
                 img {
-                    max-width: 20em;
-
-
+                    max-width: 360px;
                 }
             }
 
@@ -331,6 +332,7 @@
 
         img#working {
             display: block;
+            max-width: 340;
         }
 
         section.info {
@@ -364,6 +366,16 @@
     #mission {
         margin-top: 2em;
         margin-bottom: 2em;
+
+        .row {
+            max-width: 40em;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 40em;
+            margin: 0 auto;
+        }
     }
 
     /*  */
@@ -382,6 +394,7 @@
                 margin-bottom: 1em;
                 margin-top: 1em;
                 margin-left: 0;
+                max-width: 360px;
             }
         }
 
@@ -393,6 +406,7 @@
                 margin-right: 0em;
                 margin-bottom: 1em;
                 margin-top: 1em;
+                max-width: 360px;
             }
         }
     }
