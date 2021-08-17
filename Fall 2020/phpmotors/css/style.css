@@ -1,0 +1,456 @@
+/* Media-first for mobile screen */
+#infoImage {
+    max-width: 300px;
+    align-self: center;
+}
+
+.greyInfo {
+    background-color: #bababa38;
+    padding: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#important {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#welcomeBack {
+    font-size: 130%;
+    padding: 15px;
+    font-weight: bold;
+    margin: auto;
+}
+
+#logIn {
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+    margin-bottom: 1em;
+}
+
+#loggedInMessage {
+    margin-bottom: 0px;
+}
+
+#acc {
+    margin: auto;
+    margin-right: 0px;
+}
+
+#password,
+#password1,
+#password2 {
+    font-size: 80%;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+#addClass input,
+#addClass label,
+#addVehicle input,
+#addVehicle label,
+#addVehicle select,
+#updateVehicle input,
+#updateVehicle label,
+#updateVehicle select,
+#deleteVehicle input,
+#deleteVehicle label,
+#deleteVehicle select,
+#accountUpdate input,
+#accountUpdate label,
+#changePassword input,
+#changePassword label {
+    display: block;
+    margin-bottom: .8em;
+}
+
+#logIn label {
+    margin-top: 13px;
+}
+
+#submitClass,
+#submitVehicle {
+    margin-top: 2.4em;
+}
+
+#adminPage p {
+    margin-top: .5em;
+    margin-bottom: .8em;
+}
+
+#adminPage h3 {
+    margin-top: 2.5em;
+}
+
+#signIn {
+    border: none;
+    padding: 5px;
+    margin-top: 2.5em;
+    min-width: 164.8px;
+    background-color: #3a3a3a;
+    font-size: 100%;
+    font-family: DejaVu Sans Mono, monospace;
+    color: #ffff;
+    cursor: pointer;
+}
+
+#signIn:hover {
+    border: none;
+    background: #4c96d7;
+    box-shadow: 0px 0px 1px #3a3a3a;
+    color: #3a3a3a;
+}
+
+#question {
+    margin-left: 10px;
+    padding: 15px;
+}
+
+body {
+    background-color: #ffff;
+    margin: 0;
+    font-family: DejaVu Sans Mono, monospace;
+}
+
+#logo {
+    height: 33px;
+    width: 91px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#top-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#top-header a {
+    padding: 15px;
+}
+
+#top-header a:link {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+#mainNav ul {
+    background-color: #3a3a3a;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+#mainNav li {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+#mainNav a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#mainNav a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#mainNav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#mainNav a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#mainNav a:active {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+main {
+    display: flex;
+    background-color: #ffffff;
+    color: #3a3a3a;
+    flex-direction: column;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#bottomContent {
+    display: flex;
+    flex-direction: column;
+}
+
+#leftUpgrades {
+    display: flex;
+}
+
+#pageTitle {
+    padding: 3px;
+}
+
+#adBox {
+    color: #4c96d7;
+    padding-left: 5%;
+    z-index: 2;
+}
+
+#adBox h2 {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#adBox p {
+    margin: 3px;
+    z-index: 2;
+}
+
+#button {
+    background-color: #4c96d7;
+    border-color: #3a3a3a;
+    color: #3a3a3a;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: DejaVu Sans Mono, monospace;
+    margin-top: 20px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+#deloreanImage img {
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+#leftUpgrades {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#leftUpgrades img {
+    background-color: #4c96d7;
+    border-width: 2px;
+    border-color: #3a3a3a;
+    border-style: solid;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 50px;
+}
+
+#line {
+    padding: 4px;
+    margin: 0px;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+hr {
+    display: flex;
+    background-color: #3a3a3a;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #3a3a3a;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#inv-display {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#inv-display li {
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+
+#inv-display li img {
+    max-width: 100%;
+}
+
+/* Large Screen attempt two */
+@media screen and (min-width: 760px) {
+
+    #infoImage {
+        max-width: 750px;
+        align-self: center;
+    }
+
+    body {
+        background-image: url("/phpmotors/images/site/checkerboard.jpg");
+        font-size: 110%;
+        max-width: 1050px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: DejaVu Sans Mono, monospace;
+    }
+
+    #wrapper {
+        background-color: #4c96d7;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 0px;
+    }
+
+    #logo {
+        height: 72px;
+        width: 200px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    #mainNav li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    #mainNav a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 33px;
+        padding-left: 33px;
+    }
+
+    #topContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #adBox {
+        order: 0;
+        margin-top: -10px;
+    }
+
+    #button {
+        padding-left: 10px;
+        padding-right: 10px;
+        order: 0;
+        z-index: 2;
+        margin-left: 5%;
+        margin-right: 80%;
+    }
+
+    #deloreanImage {
+        order: 2;
+        z-index: 0;
+        margin-top: -60px;
+    }
+
+    #bottomContent {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #leftUpgrades {
+        order: 1;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #leftTitle {
+        margin-left: 70px;
+    }
+
+    #leftUpgrades img {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 60px;
+    }
+
+    #rightReviews {
+        order: 2;
+    }
+
+    #rightReviews li {
+        padding-top: 10px;
+    }
+
+    #inv-display {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    #inv-display h2 {
+        font-size: 1rem;
+    }
+
+    #inv-display li {
+        max-width: 200px;
+        flex: 1 0 auto;
+        text-align: center;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #inv-display div {
+        width: 100%;
+    }
+}
