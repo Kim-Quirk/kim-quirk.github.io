@@ -1,0 +1,105 @@
+body {
+    font-family: monospace;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+div {
+    width: 500px;
+    margin: 0 auto;
+}
+
+p {
+    padding: 30px;
+    background-color: thistle;
+    font-size: 1.3em;
+}
+
+/*--------------- CSS Corners -------------- */
+
+/* p {
+    border-radius: 5px;
+} */
+
+/* Four values */
+/* p {
+    border-radius: 5px 100px 50px 300px;
+} */
+
+/* Three values */
+/* p {
+    border-radius: 5px 100px 25px;
+} */
+/* Two Values */
+p {
+    border-radius: 10px 25px;
+}
+
+
+
+/*--------------- CSS Borders -------------- */
+p {
+    border: 5px black;
+}
+
+/* Border sides */
+/* p {
+    border-top: 10px double black;
+    border-right: 8px solid red;
+    border-bottom: 8px dotted blue;
+    border-left: 1px groove green;
+} */
+
+/* Shorthand */
+
+/* p {
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+} */
+
+/*--------------- CSS Shadows -------------- */
+
+/* --text-- */
+/* p {
+    text-shadow: 2px 2px;
+} */
+
+/* color! */
+/* p {
+    text-shadow: 2px 2px red;
+} */
+
+/* blur! */
+/* p {
+    text-shadow: 2px 2px 5px red;
+} */
+
+/* multiple */
+/* p {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+} */
+
+/* border */
+/* p {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+} */
+
+/* --box-- */
+/* p {
+    box-shadow: 10px 10px;
+} */
+
+/* color */
+/* p {
+    box-shadow: 10px 10px yellow;
+} */
+
+/* blur */
+p {
+    box-shadow: 10px 10px 5px grey;
+}
